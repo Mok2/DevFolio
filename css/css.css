@@ -1,0 +1,286 @@
+*{
+    margin: 0% !important;
+    padding: 0% !important;
+    box-sizing: border-box !important;
+}   
+a{
+    text-decoration: none;
+    
+}
+li{
+    list-style-type: none;
+}
+.icon12{
+    border: var(--blue-color) 1rem solid;
+    border-radius: 50%;
+    transition: 0.3s linear;
+}
+.icon12:hover{
+    border-color: #CDE1F8 !important;
+    color: white;
+    background-color: var(--blue-color);
+}
+:root{
+    --page-color:#F5F5F5;
+    --blue-color:#0078FF;
+    --white-color:white;
+}
+.bg-page-color{
+    background-color: var(--page-color);
+}
+.bg-img{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+}
+.bg-blend-mode{
+    background-color:var(--blue-color);
+    background-blend-mode: soft-light;
+    opacity: 0.9;
+}
+.title::after{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color:var(--blue-color) ;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* navbar */
+/* ---------------------------------------------- start nav--------------------------------------------------- */
+
+.navbar .nav-link ,
+.navbar-brand,
+.navbar-brand:hover,
+.navbar-brand:focus{
+    color: var(--white-color);
+}
+.navbar-nav .nav-link::before{
+    content: "";
+    width: 50%;
+    height: 2px;
+    background-color:var(--white-color) ;
+    position: absolute;
+    left: 10px;
+    bottom:8px;
+    transform: translateX(-140%);
+    opacity: 0;
+    transition: .5s;
+}
+.nav-item:hover .nav-link{
+    color: var(--white-color);
+}
+.nav-item:hover .nav-link::before,
+.nav-item.active .nav-link::before{
+    transform: translateX(0%);
+    opacity: 1;
+}
+.navbar .dropdown-menu a{
+    transition: 0.2s linear;
+}
+.navbar .dropdown-menu a:hover{
+    color: var(--blue-color) !important;
+    }
+/* ---------------------------------------------- end nav--------------------------------------------------- *‎Thank you for your business! We look forward to working with you again.
+
+/* header */
+#header{
+    background-image: url(../images/images201.jpg);
+    height: 100vh;
+}
+#header p::after{
+    content: "";
+    animation: textslider steps(34) 5s infinite;
+}
+@keyframes textslider {
+    3%{
+        content: "|";
+    }
+    6%{
+        content: "D|";
+    }
+    9%{
+        content: "DE|";
+    }
+    12%{
+        content: "DES|";
+    }
+    15%{
+        content: "DESI|";
+    }
+    18%{
+        content: "DESIG|";
+    }
+    21%{
+        content: "DESIG|";
+    }
+    24%{
+        content: "DESIGN|";
+    }
+    27%{
+        content: "DESIGNE|";
+    }
+    30%{
+        content: "DESIGNER|";
+    }
+    33%{
+        content: "DESIGNE|";
+    }
+    36%{
+        content: "DESIGN|";
+    }
+    39%{
+        content: "DESIG|";
+    }
+    42%{
+        content: "DESI|";
+    }
+    45%{
+        content: "DES|";
+    }
+    48%{
+        content: "DE|";
+    }
+    51%{
+        content: "DE|";
+    }
+    54%{
+        content: "DEV|";
+    }
+    57%{
+        content: "DEVO|";
+    }
+    60%{
+        content: "DEVOL|";
+    }
+    63%{
+        content: "DEVOLO|";
+    }
+    66%{
+        content: "DEVOLOP|";
+    }
+    69%{
+        content: "DEVOLOPE|";
+    }
+    72%{
+        content: "DEVOLOPER|";
+    }
+    75%{
+        content: "DEVOLOPE|";
+    }
+    78%{
+        content: "DEVOLOP|";
+    }
+    81%{
+        content: "DEVOLO|";
+    }
+    84%{
+        content: "DEVOL|";
+    }
+    87%{
+        content: "DEVO|";
+    }
+    90%{
+        content: "DEV|";
+    }
+    93%{
+        content: "DE|";
+    }
+    96%{
+        content: "D|";
+    }
+    98%{
+        content: "|";
+    }
+    100%{
+        content: "";
+    }
+
+    
+}
+/* section1 */
+.h-10px{
+    height: 10px;
+}
+.status-bar1{
+    background-image: linear-gradient(to right,#0078FF 85%,#CDE1F8 85%,#CDE1F8 100%);
+}
+.status-bar2{
+    background-image: linear-gradient(to right,#0078FF 75%,#CDE1F8 75%,#CDE1F8 100%);
+}
+.status-bar3{
+    background-image: linear-gradient(to right,#0078FF 50%,#CDE1F8 50%,#CDE1F8 100%);
+}
+.status-bar4{
+    background-image: linear-gradient(to right,#0078FF 90%,#CDE1F8 90%,#CDE1F8 100%);
+}
+#AboutMe h5{
+    font-size: xx-large;
+}
+/* services */
+
+
+/* Status */
+#status {
+    height: auto;
+    padding: 100px 0px !important;
+    color: #CDE1F8;
+    background-image: url(../images/images203.jpg);
+}
+/* protfolio */
+#protofolio img{
+    transition: transform 0.2s linear;
+}
+#protofolio .w-100:hover img{
+    transform: scale(1.2);
+}
+
+/* Feedback */
+#feedback{
+    background-image: url(../images/images210.jpg);
+    padding: 100px 0px !important;
+}
+#feedback img{
+    width: 100px !important;
+  
+}
+/* Blog */
+#blog .caption2{
+    background-color: var(--page-color);
+}
+#blog .caption2 img{
+    width:30px;
+}
+#blog a{
+    color: black;
+    transition: 0.2s linear;
+}
+#blog .caption2 span{
+    transition: 0.2s linear;
+}
+#blog a:hover,#blog .caption2 span:hover{
+    color: var(--blue-color);
+}
+#blog .img span{
+    left: 50%;
+    bottom:-10px;
+    transform: translateX(-50%);
+}
+/* contact */
+#contact{
+    padding: 100px 0px !important;
+    background-image: url(../images/images210.jpg);
+}
+#contact .text::after{
+content: "";
+width: 150px;
+height: 2px;
+background-color: var(--blue-color);
+position: absolute;
+bottom:20px;
+left: 0%;
+}
